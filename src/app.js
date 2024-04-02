@@ -15,5 +15,7 @@ let generateDomain=()=>{
   let secondIndx = [Math.floor(Math.random() * secondWordOfDomain.length)];
   let domainIndx = [Math.floor(Math.random() * domain.length)];
 
+  return firstWordOfDomain[firstIndx]+" "+secondWordOfDomain[secondIndx]+" "+domain[domainIndx];
+
 
 }
