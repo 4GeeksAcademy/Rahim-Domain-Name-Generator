@@ -2,9 +2,10 @@
 
 window.onload = function() {
   document.querySelector("#domain").innerHTML = generateDomain();
-  let i = random;
-
-  console.log("Hello Rigo from the console!");
+  let i = Math.random;
+  for (i = 0; i < 4; ) {
+    console.log(i);
+  }
 };
 
 //declaring function
