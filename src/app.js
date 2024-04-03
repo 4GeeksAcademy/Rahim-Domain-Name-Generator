@@ -2,8 +2,11 @@
 
 window.onload = function() {
   document.querySelector("#domain").innerHTML = generateDomain();
+  let i = random;
+
   console.log("Hello Rigo from the console!");
 };
+
 //declaring function
 let generateDomain = () => {
   let firstWordOfDomain = ["Focus", "Concentration", "Power"];
@@ -15,11 +18,11 @@ let generateDomain = () => {
   let secondIndx = [Math.floor(Math.random() * secondWordOfDomain.length)];
   let domainIndx = [Math.floor(Math.random() * domain.length)];
 
-  return (
+  let random =
     firstWordOfDomain[firstIndx] +
     " " +
     secondWordOfDomain[secondIndx] +
     " " +
-    domain[domainIndx]
-  );
+    domain[domainIndx];
+  return random;
 };
